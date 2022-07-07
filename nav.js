@@ -12,6 +12,7 @@ List.addEventListener('click', () => {
   document.querySelector('.book-list-container').style.display = "block";
   document.querySelector('.input').style.display = "none";
   document.querySelector('.contact').style.display = "none";
+  location.reload();
 })
 
 Contact.addEventListener('click', () => {
