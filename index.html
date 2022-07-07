@@ -7,16 +7,24 @@
   <link rel="stylesheet" href="style.css">
   <title>Awesome books</title>
 </head>
-<body class="flex-center">
+<body>
 <header>
+  <nav><a class="remove-decoraion" href="index.html"><h2>Awesome Books</h2></a>
+    <ul>
+      <li class=" List remove-decoraion">List</li>
+      <li class="Add remove-decoraion">Add Books</li>
+      <li class="Contact remove-decoraion">Contact</li>
+    </ul>
+  </nav>
 </header>
   <section class="book-list-container">
-    <div class="bookList">
+    <h2>All Awesome Books</h2>
+    <div class="bookList flex-column">
     </div>
   </section>
   <section class="input">
     <h2>Add a new book</h2>
-  <form  class="flex-center" id="form" action="">
+  <form  class="flex-center" id="form" action="#">
     <input type="text" id="title" placeholder="Title">
     <input type="text" id="author" placeholder="Author">
     <button id="add" type="submit">Add</button>
@@ -32,7 +40,11 @@
     <li>Our adress: street name 2145 484846 sousse tunisia</li>
   </ul>
 </section>
-<section class="footer"></section>
-<script src="main.js""></script>
+<section class="footer">
+  <h4>@Copyrights:</h4>
+  <p>all rights reserved</p>
+</section>
+<script src="main.js"></script>
+<script src="nav.js"></script>
 </body>
 </html>

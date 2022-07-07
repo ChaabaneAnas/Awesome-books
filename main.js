@@ -16,8 +16,10 @@ class ui {
         const bookFrame = document.createElement('div');
         bookFrame.classList.add('bookFrame');
         bookFrame.innerHTML = `
+        <div class = "bookContent">
         <p class="bookTitle"><b>${book.title}</b></p>
         <p>by<span></span><b>${book.author}.</b></p>
+        </div>
         <button class="removeBtn">Remove</button>
         `;
         booklist.appendChild(bookFrame);
@@ -76,6 +78,4 @@ class store {
   document.querySelector('.bookList').addEventListener('click', (e) => {
     ui.removeBook(e.target)
     store.deletebook(e.target.previousElementSibling.previousElementSibling.textContent)
-    console.log(e.target.previousElementSibling.previousElementSibling.textContent);
   });
-
