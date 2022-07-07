@@ -1,0 +1,109 @@
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.remove-decoraion {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+body {
+  text-align: center;
+  background-color: #93734e;
+  border-radius: 10px;
+  color: #e5c2ac;
+}
+
+nav {
+  color: #e2a66e;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10%;
+  background-color: #572b10;
+  border-radius: 10px;
+}
+
+nav h2 {
+  color: #e2a66e;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+#form {
+  border: solid grey 1px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  width: 30%;
+  margin: 0 auto;
+}
+
+input {
+  width: 100%;
+}
+
+button {
+  align-self: flex-start;
+  width: 35%;
+}
+
+.contact {
+  padding: 0% 35%;
+  display: none;
+}
+
+.bookFrame {
+  display: flex;
+  width: 50%;
+  padding: 0.5% 5%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bookContent {
+  display: flex;
+  gap: 8px;
+}
+
+.bookFrame .removeBtn {
+  width: 17%;
+}
+
+.bookFrame b,
+.bookFrame p,
+.bookFrame button {
+  margin: 0;
+}
+
+section {
+  margin-bottom: 50px;
+}
+
+.input {
+  display: none;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  position: fixed;
+  bottom: 0;
+  margin: 0;
+  width: 100%;
+}
