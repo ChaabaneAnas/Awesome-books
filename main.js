@@ -57,7 +57,7 @@ class store {
 
   static deletebook(title){
     let booksCollection = store.getbook();
-    booksCollection = booksCollection.filter(book => book.title === title);
+    booksCollection.splice(title, 1);
     localStorage.setItem('booksCollection', JSON.stringify(booksCollection));
   }
    };
