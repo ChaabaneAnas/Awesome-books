@@ -1,0 +1,41 @@
+.flex-center {
+  text-align: center;
+}
+
+body {
+  height: 100vh;
+}
+
+#form {
+  border: solid grey 1px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  width: 30%;
+  height: 25%;
+}
+
+button {
+  margin-left: 7%;
+  align-self: flex-start;
+  width: 35%;
+}
+
+.bookFrame {
+ display: flex;
+ width: 375px;
+ padding: 0;
+ align-items: center;
+ gap:8px;
+ background-color: wheat;
+}
+
+.bookFrame .removeBtn {
+  width: 15%;
+}
+
+.bookFrame b,
+.bookFrame p,
+.bookFrame button {
+  margin: 0;
+}
