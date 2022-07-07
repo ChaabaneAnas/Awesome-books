@@ -30,10 +30,10 @@ class ui {
         btn.parentElement.remove();
       }
     }
-
-    clearFields(){
-      Title = ""
-      Author = ""
+    
+    static clearFields(){
+      document.querySelector('#title').value = "";
+      document.querySelector('#author').value = "";
     }
 }
 
@@ -65,17 +65,16 @@ class store {
   
    document.addEventListener('DOMContentLoaded', ui.displayBooksCollection);
    Form.addEventListener('submit',(e) => {
-    e.preventDefault;
     const Title = document.querySelector('#title').value;
     const Author = document.querySelector('#author').value;
     const book = new Book(Title, Author);
     store.setbook(book);
-    ui.displayBooksCollection();
-    ui.clearFields()
+    ui.clearFields();
    })
 
    
   document.querySelector('.bookList').addEventListener('click', (e) => {
     ui.removeBook(e.target)
-    store.deletebook(e.target.previousElementSibling.previousElementSibling.textContent)
+    store.deletebook(e.target.previousElementSibling.firstElementChild.textContent);
+    console.log(e.target.previousElementSibling.firstElementChild.textContent)
   });
