@@ -1,7 +1,9 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
 # Awesome Books
-> Description the project.
+> in this project im building an webpage,
+ where u can add display and remove Books,
+ and save changes in localstorage 
 
 
 ## Built With
@@ -12,7 +14,7 @@
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://chaabaneanas.github.io/Awesome-books/)
 
 
 ## Getting Started
@@ -21,8 +23,6 @@
 To get a local copy up and running follow these simple example steps.
 run git clone (the link of the project)
 open the folder in your code editor and there u go ..
-
-
 
 
 
