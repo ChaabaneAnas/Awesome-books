@@ -63,6 +63,7 @@ button {
 
 .contact {
   padding: 0% 35%;
+  display: none;
 }
 
 .bookFrame {
@@ -90,6 +91,10 @@ button {
 
 section {
   margin-bottom: 50px;
+}
+
+.input {
+  display: none;
 }
 
 .footer {
