@@ -71,6 +71,8 @@ Form.addEventListener('submit', (e) => {
   const book = new Book(Title, Author);
   store.setbook(book);
   ui.clearFields();
+  // eslint-disable-next-line
+  location.reload()
 });
 
 document.querySelector('.bookList').addEventListener('click', (e) => {
