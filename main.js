@@ -1,6 +1,7 @@
 /* eslint-disable max-classes-per-file */
 
 const Form = document.querySelector('#form');
+const booklist = document.querySelector('.bookList');
 
 class Book {
   constructor(Title, Author) {
@@ -35,8 +36,8 @@ class store {
 
 class ui {
   static displayBooksCollection() {
+    booklist.innerHTML = ``;
     const booksCollection = store.getbook();
-    const booklist = document.querySelector('.bookList');
     booksCollection.forEach((book) => {
       const bookFrame = document.createElement('div');
       bookFrame.classList.add('bookFrame');
@@ -49,12 +50,6 @@ class ui {
         `;
       booklist.appendChild(bookFrame);
     });
-  }
-
-  static removeBook(btn) {
-    if (btn.classList.contains('removeBtn')) {
-      btn.parentElement.remove();
-    }
   }
 
   static clearFields() {
@@ -70,12 +65,13 @@ Form.addEventListener('submit', (e) => {
   const Author = document.querySelector('#author').value;
   const book = new Book(Title, Author);
   store.setbook(book);
+  ui.displayBooksCollection()
   ui.clearFields();
 });
 
 document.querySelector('.bookList').addEventListener('click', (e) => {
-  ui.removeBook(e.target);
   store.deletebook(
     e.target.previousElementSibling.firstElementChild.textContent,
   );
+  ui.displayBooksCollection()
 });
